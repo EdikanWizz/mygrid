@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY GRID</title>
+    <style>
+        *{
+            margin:0
+        }
+        body{
+            background-color:rgb(2, 21, 34)
+        }
+        .grid-container{
+            display: grid;
+            width: 70%;
+            height: 400px;
+            margin: auto;
+            margin-left:50px;
+            padding-top: 2%;
+            grid-gap:14px
+        }
+        .grid-container>div{
+            border: 1px solid;
+        }
+        .grid1{
+            grid-column:1/span 3;
+            grid-row: 1/span 2;
+            background-color: orangered;
+        }
+        .grid2{
+            grid-column:4/span 2;
+            grid-row:1/span 2;
+            background: orange;
+        }
+        .grid3{
+            grid-column:1/span 2;
+            grid-row:3/span 2;
+            background-color: green;
+        }
+        .grid4{
+            grid-column:3/span 3;
+            grid-row:3;
+            background-color:darkcyan
+        }
+        .grid5{
+            grid-column:3/span 3;
+            grid-row:4;
+            background-color:darkcyan
+        }
+        .main-container{
+            background-color: rgb(4, 4, 14);
+            height:470px;
+            width: 59%;
+            margin: auto;
+            margin-top:65px;
+            box-shadow:7px 7px 7px 7px rgb(4, 4, 14);
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+    <div class="grid-container">
+        <div class="grid1"></div>
+        <div  class="grid2"></div>
+        <div  class="grid3"></div>
+        <div  class="grid4"></div>
+        <div  class="grid5"></div>  
+    </div>
+    </div>
+</body>
+</html>
